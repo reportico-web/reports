@@ -3,7 +3,10 @@
 <br><br>
 
 <?php 
-    if ( ( isset($example_description) && $example_description !== false )  && $description !== false ) {
+    if ( !isset($example_description) ) {
+        $example_description = "";
+    }
+    if ( $example_description !== false  && $description !== false ) {
 ?>
 
 
