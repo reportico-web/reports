@@ -1,0 +1,24 @@
+{
+    "name": "reportico-web/reports",
+    "type": "project",
+    "description": "The Reportico Reporting Designer and Framework.",
+    "authors": [
+        {
+            "name": "Peter Deed",
+            "email": "info@reportico.org",
+            "homepage": "http://www.reportico.org/"
+        }
+    ],
+    "keywords": [
+        "Reportico",
+        "reporting",
+        "reports"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.0.0",
+        "reportico-web/reportico": "^7.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
