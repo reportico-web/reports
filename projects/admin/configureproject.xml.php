@@ -1,7 +1,6 @@
 <?php
 namespace Reportico\Engine;
 
-echo "START ".$this->admin_projects_folder."<BR>";
 //global $_configure_mode;
 
 // Extract Criteria Options
@@ -101,16 +100,12 @@ else
 }
 
 $proj_parent = $this->projects_folder;
-echo $proj_parent;
 if (  !is_dir($proj_parent) )
     $proj_parent = find_best_location_in_include_path( $this->projects_folder );
-echo $proj_parent;
 
 $admin_folder = $this->admin_projects_folder;
-echo $admin_folder;
 if (  !is_dir($admin_folder) )
     $admin_folder = find_best_location_in_include_path( $this->admin_projects_folder );
-echo $admin_folder;
 
 $proj_dir = $proj_parent."/".$configparams["SW_PROJECT"];
 

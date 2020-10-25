@@ -1,9 +1,4 @@
-# reports
-Standalone Edition of Reportico Report Designer and Framework
-
-
-# Reportico
-Reportico Open Source PHP report Designer
+#Reportico Open Source PHP report Designer
 
 Reportico PHP Reporting Tool. Runs against MySQL, PostgreSQL and other PDO enable databases - 
 design reports, create report menus, configure criteria, graphs, grouping, drill-down, output in HTML, PDF, & CSV, expression handling, look and feel through CSS, data transformation.
