@@ -1,10 +1,15 @@
 <?php
       require_once(__DIR__ .'/../vendor/autoload.php');
 
+     // INCLUDE DB CONFIG
+     $dbconfig = __DIR__."/config.php";
+     include ($dbconfig);
+     // INCLUDED DB CONFIG
       \Reportico\Engine\Builder::build()
-          ->datasource()->database("mysql:host=localhost; dbname=reportico")->user("peter")->password("pN0stalr!")
+          ->properties([ "bootstrap_preloaded" => true])
+          ->datasource()->database("mysql:host=$examples_host; dbname=$examples_database")->user($examples_user)->password("$examples_password")
           ->title     ("Product Stock")
-          ->description     ("Produces a list of our employees")
+          ->description     ("Produces a list and charts of stock levels")
           ->sql       ("
               SELECT  ProductID id, ProductName product, UnitsInStock in_stock, ReorderLevel reorder_level, companyname Company, country, categoryname category
               FROM northwind_products 
@@ -23,5 +28,5 @@
               ->xlabels("product")
               ->xtitle("Levels")
               ->ytitle("Products")
-          ->execute();
+          ->prepare();
 ?>

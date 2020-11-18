@@ -1,7 +1,7 @@
 \Reportico\Engine\Builder::build()
           ->datasource()
           ->database("mysql:host=localhost; dbname=reportico")
-          ->user("peter")
+          ->user({USER})
           ->password("pN0stalr!")
           ->title     ("Employee List")
           ->description     ("Produces a list of our employees")

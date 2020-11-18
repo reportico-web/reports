@@ -1,9 +1,13 @@
 <?php
 
      require_once(__DIR__ .'/../vendor/autoload.php');
-
+     // INCLUDE DB CONFIG
+     $dbconfig = __DIR__."/config.php";
+     include ($dbconfig);
+     // INCLUDED DB CONFIG
      \Reportico\Engine\Builder::build()
-          ->datasource()->database("mysql:host=localhost; dbname=reportico")->user("peter")->password("pN0stalr!")
+          ->properties([ "bootstrap_preloaded" => true])
+          ->datasource()->database("mysql:host=$examples_host; dbname=$examples_database")->user($examples_user)->password("$examples_password")
           ->title     ("Employee List")
           ->description     ("Produces a list of our employees")
 
@@ -30,6 +34,7 @@
                 [ AND DATE(BirthDate) BETWEEN {born,from} AND {born,to} ]
                 [ AND ( LastName like '%{namematch,false}%' OR FirstName like '%{namematch,false}%' ) ]
                 [ AND ( EmployeeID in ( {namemulti} ) ) ]
+                [ AND ( EmployeeID in ( {namemulti2} ) ) ]
                 ORDER BY Country, LastName
 			    ")
 
@@ -70,7 +75,21 @@
             ->title("Full Name Multi Select")
             ->type("lookup")
             ->sql("SELECT EmployeeID id, concat(FirstName, ' ', LastName) fullname FROM northwind_employees")
+            //->widget("select2multiple")
+            ->widget("multi")
+            ->return("id")
+            ->display("fullname", "fullname")
+            ->match("CONCAT(FirstName, ' ', LastName)")
+
+          // A searchable mutliselect criteria widget which uses the SQL CONCAT function to allow selection
+          // from a list of full employee names. It returns the EmployeeID of the selected employees back to main
+          // query SQL where the EmployeeID is used for the match.
+          ->criteria("namemulti2")
+            ->title("Full Name Multi Select")
+            ->type("lookup")
+            ->sql("SELECT EmployeeID id, concat(FirstName, ' ', LastName) fullname FROM northwind_employees")
             ->widget("select2multiple")
+            //->widget("multi")
             ->return("id")
             ->display("fullname", "fullname")
             ->match("CONCAT(FirstName, ' ', LastName)")

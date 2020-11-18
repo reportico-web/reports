@@ -2,6 +2,7 @@
     <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"-->
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="../vendor/reportico-web/reportico/assets/bootstrap4/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/reportico-web/reportico/assets/font-awesome/font-awesome.css">
     <link rel="stylesheet" href="style.css">
     <script src="../vendor/reportico-web/reportico/assets/node_modules/jquery/js/jquery.js"></script>
     <script src="../vendor/reportico-web/reportico/assets/bootstrap4/bootstrap.js"></script>
@@ -172,8 +173,18 @@
 
 <?php
 require_once(__DIR__ .'/../vendor/autoload.php');
-$code = file_get_contents(__DIR__."/$example_file");
+$code = "";
+if ( file_exists(__DIR__."/$example_file") )
+    $code = file_get_contents(__DIR__."/$example_file");
 $code = preg_replace("/->datasource.*\)/", "->datasource()->database(\"mysql:host=localhost; dbname=DATABASE NAME\")->user(\"USER\")->password(\"PASSWORD\")", $code);
+$code = preg_replace("/\/\/ INCLUDE DB CONFIG.*INCLUDED DB CONFIG/s", "", $code);
 $code =  highlight_string($code, true);
+
+$dbconfig = __DIR__."/config.php";
+if ( !file_exists($dbconfig) ){
+    echo "To run the examples you must have the tutorials project configured and configure the file $dbconfig with your user credentials\n";
+    die;
+}
+
 
 ?>

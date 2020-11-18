@@ -13,7 +13,7 @@
 <div class="rounded" style="border:solid 1px #cccccc; padding: 10px">
 <ul class="nav nav-pills" role="tablist">
     <li class="nav-item active"><a id="Usage" class="nav-link show active" data-toggle="tab" href="#tab-content-usage">Usage</a></li>
-    <li class="nav-item"><a id="View Code" class="nav-link " data-toggle="tab" href="#tab-example-code">View Code</a></li>
+    <li class="nav-item"><a id="View Code" class="nav-link " data-toggle="tab" href="#tab-example-code">Try Example</a></li>
 </ul>
 <?php 
     }
@@ -57,7 +57,7 @@
         <div class="non-printable">
             <?php if ( isset($example_description) ) echo $example_description ?>
             <br><br>
-            <a target="_blank" class="btn btn-success" href="<?php echo $example_url?>">Click here to run example</a>
+            <a target="_blank" class="btn btn-success" id="run-example" href="<?php echo $example_url?>">Run Demo</a>
         </div>
         <br><br>
 <?php
