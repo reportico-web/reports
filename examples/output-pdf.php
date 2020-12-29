@@ -1,6 +1,8 @@
 <?php
 include (__DIR__."/header.php");
 
+$example_in_modal = false;
+
 $description = "
 To create a PDF report on the fly use the method <b>to(\"PDF\")</b> as shown below.
 Reportico ships with two types of PDF generator, TCPDF and Chromium and depending on your environment you will eed to choose which is best for you.

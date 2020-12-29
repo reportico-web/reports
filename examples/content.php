@@ -57,7 +57,18 @@
         <div class="non-printable">
             <?php if ( isset($example_description) ) echo $example_description ?>
             <br><br>
+<?php 
+    if ( !isset($example_in_modal) || !$example_in_modal )  {
+?>
+            <a target="_blank" class="btn btn-success" id="" href="<?php echo $example_url?>">Run Demo</a>
+<?php 
+    } else {
+?>
             <a target="_blank" class="btn btn-success" id="run-example" href="<?php echo $example_url?>">Run Demo</a>
+<?php 
+    }
+?>
+
         </div>
         <br><br>
 <?php

@@ -10,6 +10,7 @@ Each column in the report output can be configured in a number of ways using the
     <li>order - sets which column the data will appear in the report body table</li>
     <li>label - Alternative label to be placed in column headers and group sections</li>
     <li>columnwidth - How wide the column should be. Use css notation</li>
+    <li>columnwidthpdf - How wide the column should be on a pdf report. Use css notation</li>
     <li>justify - Sets whether to left, right or centre justify the column value</li>
 </ul>
 ";

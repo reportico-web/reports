@@ -9,6 +9,11 @@
 
 
 <?php
+
+
+
+    $example_in_modal = true;
+
     $section = isset($_REQUEST["section"]) ? $_REQUEST["section"] : "home";
     $page = preg_replace("/\..*/", "", basename($_SERVER["PHP_SELF"]));
     $page = isset($_REQUEST["page"]) ? $_REQUEST["page"] : $page;

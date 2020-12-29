@@ -2,6 +2,7 @@
 include (__DIR__."/header.php");
 
 $description = "To create a CSV report on the fly use the method <b>to(\"CSV\")</b> as shown below.";
+$example_in_modal = false;
 
 $usage_method = "
 <?php
