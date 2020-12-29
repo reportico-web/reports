@@ -265,7 +265,7 @@ $reportico->theme = "bootstrap4";
 
 // Required PDF Engine set -- to phantomjs, chromium or tcpdf
 //$reportico->pdf_engine = "tcpdf";
-$reportico->pdf_engine = "chromium";
+
 
 // Path to Phantom js executable relative to root
 //$reportico->pdf_phantomjs_path = "bin/phantomjs";
