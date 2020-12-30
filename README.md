@@ -19,7 +19,7 @@ design reports, create report menus, configure criteria, graphs, grouping, drill
 
 ## Install
 
-Reportico is best installed via composer or zip downloads are available from the releases page https://github.com/reportico-web/reportico/releases
+Reportico is best installed via composer or zip downloads are available from the releases page https://github.com/reportico-web/reports/releases
 
 To install the latest stable version use the following composer command under a web folder
 
@@ -37,10 +37,10 @@ http://www.reportico.org
 
 ## Screenshots
 
-![Criteria Page](/images/reportico_prepare.png?raw=true "Criteria Page")
+![Criteria Page](/assets/images/reportico_prepare.png?raw=true "Criteria Page")
 
 
-![Edit Query Page](/images/reportico_sql.png?raw=true "Edit Query Page")
+![Edit Query Page](/assets/images/reportico_sql.png?raw=true "Edit Query Page")
 
 
 ![Report Output Page](/images/reportico_output.png?raw=true "Report Output Page")
