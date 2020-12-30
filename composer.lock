@@ -581,12 +581,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reportico-web/reportico.git",
-                "reference": "72f5a102b9b2e7e4ccc55655b0cf2669dc4bd93a"
+                "reference": "2d03ac724de97009bf4e2d8f0ef4ace137310c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reportico-web/reportico/zipball/72f5a102b9b2e7e4ccc55655b0cf2669dc4bd93a",
-                "reference": "72f5a102b9b2e7e4ccc55655b0cf2669dc4bd93a",
+                "url": "https://api.github.com/repos/reportico-web/reportico/zipball/2d03ac724de97009bf4e2d8f0ef4ace137310c90",
+                "reference": "2d03ac724de97009bf4e2d8f0ef4ace137310c90",
                 "shasum": ""
             },
             "require": {
@@ -627,7 +627,7 @@
                 "issues": "https://github.com/reportico-web/reportico/issues",
                 "source": "https://github.com/reportico-web/reportico/tree/7.1.35-beta"
             },
-            "time": "2020-12-29T13:31:32+00:00"
+            "time": "2020-12-29T16:49:38+00:00"
         },
         {
             "name": "reportico/assetter",
