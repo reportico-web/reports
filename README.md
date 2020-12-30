@@ -51,4 +51,4 @@ http://www.reportico.org
 ![Edit Query Page](/assets/images/reportico_sql.png?raw=true "Edit Query Page")
 
 
-![Report Output Page](/images/reportico_output.png?raw=true "Report Output Page")
+![Report Output Page](/assets/images/reportico_output.png?raw=true "Report Output Page")
