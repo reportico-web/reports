@@ -578,16 +578,16 @@
         },
         {
             "name": "reportico-web/reportico",
-            "version": "7.1.36-beta",
+            "version": "7.1.39-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reportico-web/reportico.git",
-                "reference": "e132f4a1813db73c9c08dc0a9ccf7e81d61b4363"
+                "reference": "e51945b49c318c1cadfa4176a30ecbe544e07a1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reportico-web/reportico/zipball/e132f4a1813db73c9c08dc0a9ccf7e81d61b4363",
-                "reference": "e132f4a1813db73c9c08dc0a9ccf7e81d61b4363",
+                "url": "https://api.github.com/repos/reportico-web/reportico/zipball/e51945b49c318c1cadfa4176a30ecbe544e07a1a",
+                "reference": "e51945b49c318c1cadfa4176a30ecbe544e07a1a",
                 "shasum": ""
             },
             "require": {
@@ -626,9 +626,9 @@
             ],
             "support": {
                 "issues": "https://github.com/reportico-web/reportico/issues",
-                "source": "https://github.com/reportico-web/reportico/tree/7.1.36-beta"
+                "source": "https://github.com/reportico-web/reportico/tree/7.1.39-beta"
             },
-            "time": "2021-01-24T13:25:54+00:00"
+            "time": "2021-06-20T14:30:16+00:00"
         },
         {
             "name": "reportico/assetter",
