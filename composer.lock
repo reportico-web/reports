@@ -686,21 +686,21 @@
         },
         {
             "name": "reportico-web/reportico",
-            "version": "8.0.2",
+            "version": "8.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reportico-web/reportico.git",
-                "reference": "50fffed791820e28fbb12013f476334ce9723ea8"
+                "reference": "614d05ade4dc22cea897887958f1398fa0df4c66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reportico-web/reportico/zipball/50fffed791820e28fbb12013f476334ce9723ea8",
-                "reference": "50fffed791820e28fbb12013f476334ce9723ea8",
+                "url": "https://api.github.com/repos/reportico-web/reportico/zipball/614d05ade4dc22cea897887958f1398fa0df4c66",
+                "reference": "614d05ade4dc22cea897887958f1398fa0df4c66",
                 "shasum": ""
             },
             "require": {
                 "adodb/adodb-php": "^5.20",
-                "php": ">=5.4.0",
+                "php": ">=8.0",
                 "reportico/assetter": "^8",
                 "spatie/browsershot": "^3.29",
                 "szymach/c-pchart": "^3.0",
@@ -734,9 +734,9 @@
             ],
             "support": {
                 "issues": "https://github.com/reportico-web/reportico/issues",
-                "source": "https://github.com/reportico-web/reportico/tree/8.0.2"
+                "source": "https://github.com/reportico-web/reportico/tree/8.0.3"
             },
-            "time": "2022-12-18T23:11:28+00:00"
+            "time": "2022-12-30T09:06:45+00:00"
         },
         {
             "name": "reportico/assetter",
@@ -1467,16 +1467,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.4.3",
+            "version": "v3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "c38fd6b0b7f370c198db91ffd02e23b517426b58"
+                "reference": "3ffcf4b7d890770466da3b2666f82ac054e7ec72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/c38fd6b0b7f370c198db91ffd02e23b517426b58",
-                "reference": "c38fd6b0b7f370c198db91ffd02e23b517426b58",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3ffcf4b7d890770466da3b2666f82ac054e7ec72",
+                "reference": "3ffcf4b7d890770466da3b2666f82ac054e7ec72",
                 "shasum": ""
             },
             "require": {
@@ -1491,7 +1491,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "3.5-dev"
                 }
             },
             "autoload": {
@@ -1527,7 +1527,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.4.3"
+                "source": "https://github.com/twigphp/Twig/tree/v3.5.0"
             },
             "funding": [
                 {
@@ -1539,7 +1539,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-28T08:42:51+00:00"
+            "time": "2022-12-27T12:28:18+00:00"
         }
     ],
     "packages-dev": [],
