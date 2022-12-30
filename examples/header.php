@@ -109,14 +109,14 @@
             if ( !isset($item["file"] )) {
                 $menus[$kmenu]["items"][$kitem]["file"] = "example.".$kitem.".php";
             }
-            if ( !isset($item["example_url"] )) {
+            if ( !isset($menus[$kmenu]["items"][$kitem]["example_url"])) {
                 $menus[$kmenu]["items"][$kitem]["example_url"] = "example.".$kitem.".php";
             }
-            if ( !isset($item["title"] )) {
+            if ( !isset($menus[$kmenu]["items"][$kitem]["title"])) {
                 $menus[$kmenu]["items"][$kitem]["title"] = ucwords($kitem);
             }
-            if ( !isset($item["usage_method"] )) {
-                $menus[$kmenu]["usage_method"][$kitem]["usage_method"] = $kitem;
+            if ( !isset($menus[$kmenu]["items"][$kitem]["usage_method"])) {
+                $menus[$kmenu]["items"][$kitem]["usage_method"] = $kitem;
             }
             if ( $page == $kitem ) {
                 $section = $kmenu;
