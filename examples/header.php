@@ -74,6 +74,7 @@
         ],
     ];
 
+    $example_file = "";
     foreach ( $menus as $kmenu => $menu ) {
         if ( !isset($menu["items"] )){
             if ( !isset($menu["url"] )) {
